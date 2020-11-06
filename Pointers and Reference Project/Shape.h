@@ -1,18 +1,17 @@
 #pragma once
 class Shape
 {
-public:
+public: //shape is now an abstract class
 	Shape();
 	Shape(float x, float y);
 	~Shape();
-	Shape operator+(const Shape b);
 	void set_Length(float x);
 	void set_Width(float x);
 	float get_Length();
 	float get_Width();
-	virtual float get_Perimeter();
-	virtual float get_Area();
-	virtual float get_Volume();
+	virtual float get_Perimeter() =0;
+	virtual float get_Area() =0;
+	virtual float get_Volume()=0;
 	
 protected:
 	float length;

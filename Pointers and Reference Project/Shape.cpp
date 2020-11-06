@@ -18,14 +18,6 @@ Shape::~Shape()
 
 }
 
-Shape Shape::operator+(const Shape b)
-{
-	Shape temp; 
-	temp.length = this->length + b.length;
-	temp.width = this->width + b.width;
-	return temp;
-}
-
 void Shape::set_Length(float x)
 {
 	length = x;

@@ -17,10 +17,8 @@ using namespace std;
     {
         Cube *cb1 = new Cube(10); //Inherited classes from class Shape
         Cube *cb2 = new Cube(20);
-        Shape* sh1 = new Shape(10, 10);
-        Shape *sh2 = new Shape(80, 100);
-        *sh1 = *sh2 + *sh1; //Overloaded operator
-        cout << sh1->get_Width() << endl;
+        cout << cb2->get_Area() << endl;
+        cout << cb1->get_Volume() << endl;
     }
 
     void print_Perimeter(Shape *shp) { //Polymorphism
